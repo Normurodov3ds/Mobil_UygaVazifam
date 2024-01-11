@@ -1,0 +1,1 @@
+Nornurodov Komilning uyga vazifasi. 
