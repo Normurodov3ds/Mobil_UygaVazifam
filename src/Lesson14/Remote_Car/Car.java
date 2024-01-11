@@ -1,4 +1,4 @@
-package Remote_Car;
+package Lesson14.Remote_Car;
 
 public class Car {
     private int slote;

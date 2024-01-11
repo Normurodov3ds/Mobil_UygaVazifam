@@ -1,4 +1,4 @@
-package Bonus_Lid;
+package Lesson14.Bonus_Lid;
 
 public class Bonus {
     private int count;

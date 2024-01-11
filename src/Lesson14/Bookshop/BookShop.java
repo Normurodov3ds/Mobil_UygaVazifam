@@ -1,4 +1,4 @@
-package Bookshop;
+package Lesson14.Bookshop;
 
 public class BookShop {
     private String name;
