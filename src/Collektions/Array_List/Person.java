@@ -1,6 +1,6 @@
 package Collektions.Array_List;
 
-public class Person implements Comparable<Person> {
+public class Person implements Comparable {
     private String name;
     private byte age;
     private char ch;
@@ -11,10 +11,6 @@ public class Person implements Comparable<Person> {
         this.ch = ch;
     }
 
-    @Override
-    public int compareTo(Person o) {
-        return this.name.compareTo(o.getName());
-    }
 
     public String getName() {
         return name;
@@ -26,6 +22,12 @@ public class Person implements Comparable<Person> {
 
     public char getCh() {
         return ch;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Person p = (Person) o;
+        return this.name.compareTo(p.getName());
     }
 
     @Override
