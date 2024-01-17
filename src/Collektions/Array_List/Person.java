@@ -10,8 +10,6 @@ public class Person implements Comparable {
         this.age = age;
         this.ch = ch;
     }
-
-
     public String getName() {
         return name;
     }
@@ -29,7 +27,6 @@ public class Person implements Comparable {
         Person p = (Person) o;
         return this.name.compareTo(p.getName());
     }
-
     @Override
     public String toString() {
         return "Person{" +

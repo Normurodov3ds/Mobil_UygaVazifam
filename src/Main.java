@@ -1,28 +1,12 @@
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        String s = "a1b22ccf";
+        String []str = s.split("[12]");
+        
+        System.out.println(str.length);
+        System.out.println(s.replaceAll("[1-9]", ""));
 
-    }
 
-    private static String teskari(String ch) {
-        switch (ch) {
-            case "(":
-                return ")";
-            case ")":
-                return "(";
-            case "[":
-                return "]";
-            case "]":
-                return "[";
-            case "{":
-                return "}";
-            case "}":
-                return "{";
-            default:
-                return "";
-        }
     }
 }
