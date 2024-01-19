@@ -4,29 +4,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Atm {
-    private MassgeInterFase massgeInterFase = null;
-    private ShowMonyInterFase showMonyInterFase = null;
+
     ArrayList<Money> monies = new ArrayList<>();
 
     public Atm() {
     }
-//    private boolean hasMassageInterfase(){
-//        return massgeInterFase!=null;
-//    }
-//    private boolean hasShowMonyInterfase(){
-//        return showMonyInterFase!=null;
-//    }
-//    public void setMassgeInterFase(MassgeInterFase massgeInterFase){
-//        if (!hasMassageInterfase()){
-//            this.massgeInterFase = massgeInterFase;
-//        }
-//    }
-//    public void setShowMonyInterFase(ShowMonyInterFase showMonyInterFase) {
-//        if (!hasShowMonyInterfase()){
-//            this.showMonyInterFase = showMonyInterFase;
-//        }
-//    }
-
 
     public void addMony(ArrayList<Money> monies) {
         Collections.sort(monies);
@@ -42,9 +24,10 @@ public class Atm {
 
     public void isGetMony(int getSum) {
         Collections.sort(monies);
-        int a = getSum / 1000;
+        int a = getSum / 1000;//400 80 1
         ArrayList<Integer> integers = new ArrayList<>();
         int i = 1;
+
         while (a != 0) {
             if (a%10!=0){
                 integers.add(a % 10 * i);
@@ -52,17 +35,19 @@ public class Atm {
             a /= 10;
             i *= 10;
         }
+
         ArrayList<Money> moneyArrayList = new ArrayList<>();
         boolean b0 = true;
         for (Integer integer : integers) {
             boolean b = false;
-            int integr1 = integer;
-            for (Money money : monies) {
+            int integr1 = integer; //300
+            for (Money money : monies) {//100
                 if (integr1 >= money.getName() && money.getAmount() >= integr1) {
                     int moneys = money.getAmount();
                     while (integr1 >= money.getName() && moneys >= 0) {
                         integr1 -= money.getName();
                         moneys -= money.getName() * 1000;
+                       // 500 0000 -= 100 000 = 400 000
                     }
                     moneyArrayList.add(new Money(money.getName(), moneys));
                 }

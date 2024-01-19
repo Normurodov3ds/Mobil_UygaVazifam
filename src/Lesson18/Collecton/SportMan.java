@@ -1,5 +1,7 @@
 package Lesson18.Collecton;
 
+import java.util.Objects;
+
 public class SportMan {
     private String name;
     private String lastNmae;
@@ -15,12 +17,17 @@ public class SportMan {
         return name;
     }
 
-    public String getLastNmae() {
-        return lastNmae;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        SportMan sportMan = (SportMan) o;
+        return age == sportMan.age && Objects.equals(name, sportMan.name) && Objects.equals(lastNmae, sportMan.lastNmae);
     }
 
-    public int getAge() {
-        return age;
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, lastNmae, age);
     }
 
     @Override

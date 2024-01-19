@@ -4,12 +4,13 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
+
         ArrayList<Money> monies = new ArrayList<>();
         Atm atm = new Atm();
         monies.add(new Money(100, 500_000));
         monies.add(new Money(50, 100_000));
         monies.add(new Money(1, 10_000));
-        monies.add(new Money(50, 100_000));
+        monies.add(new Money(50, 500_000));
         monies.add(new Money(50, 100_000)); // double add
         monies.add(new Money(200, 1_000_000));
         monies.add(new Money(10, 70_000));
@@ -19,7 +20,7 @@ public class Main {
 
         atm.addMony(monies);
         atm.monyInfo();
-        atm.isGetMony(562_000);
+        atm.isGetMony(481_000);
         atm.monyInfo();
 
     }

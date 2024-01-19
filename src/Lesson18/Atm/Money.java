@@ -52,8 +52,6 @@ public class Money implements Comparable<Money>{
         return Objects.equals(name, money.name);
     }
 
-
-
     @Override
     public int hashCode() {
         return Objects.hash(name, amount);
@@ -61,6 +59,7 @@ public class Money implements Comparable<Money>{
 
     @Override
     public int compareTo(Money o) {
+
         return Integer.valueOf(o.name).compareTo(Integer.valueOf(this.name));
     }
 }
