@@ -33,6 +33,8 @@ public class Main {
      * izoh bizga REAL Hayotda ham bankamat iloji boricha katta qiymatli pul qaytarishga harahat qiladi.
      * sabab chunki kichik summlardan yirigini hosil qilsa bo'ladi lekin yerikdan kichik summani hosil qilib bolmaydi.!
      * batcha algoritimlar (Atm class ichida)
+     * yana bir dastur afzalligi siz 200 000 so'mlik deb 500 000 ming sum kirita olmaysiz chunki bu mantiqqa ega emas.!
+     * sizdan qaytadan kiritishni so'raydi.!
      */
 
 
