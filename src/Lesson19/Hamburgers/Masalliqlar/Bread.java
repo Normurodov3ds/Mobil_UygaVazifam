@@ -1,4 +1,4 @@
-package Lesson19.Hamburger.ingredients;
+package Lesson19.Hamburgers.Masalliqlar;
 
 public enum Bread {
     SimpleBread(5_000), BigBread(8_000), AmericanBread(10_000);
