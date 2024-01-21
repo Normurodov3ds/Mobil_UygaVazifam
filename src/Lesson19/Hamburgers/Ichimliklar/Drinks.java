@@ -1,4 +1,4 @@
-package Lesson19.Hamburger.ingredients;
+package Lesson19.Hamburgers.Ichimliklar;
 
 public enum Drinks {
 

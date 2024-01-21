@@ -1,4 +1,4 @@
-package Lesson19.Hamburger.ingredients;
+package Lesson19.Hamburgers.Masalliqlar;
 
 public enum Meat {
     Beef(15_000),Mutton(12_000),HorseMeat(18_000);
