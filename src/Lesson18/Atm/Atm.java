@@ -21,7 +21,6 @@ public class Atm {
         });
     }
 
-
     public void isGetMony(int getSum) {
         Collections.sort(monies);
         int a = getSum / 1000;//400 80 1

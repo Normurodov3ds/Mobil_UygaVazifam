@@ -7,7 +7,7 @@ public class Main{
 //        Person person1 = new Person("Zoir",(byte) 22,'M');
 //        Person person2 = new Person("Bahrom",(byte) 22,'M');
 //
-//        List<Person> list = new ArrayList<>();
+//        Lesson23.List<Person> list = new ArrayList<>();
 //        list.add(person);
 //        list.add(person0);
 //        list.add(person1);
@@ -16,7 +16,7 @@ public class Main{
 //        Collections.sort(list);
 //        System.out.println(list);
 //
-//        List<String> list1 = new ArrayList<>();
+//        Lesson23.List<String> list1 = new ArrayList<>();
 //        list1.add("abbos");
 //        list1.add("malik");
 //        list1.add("jamol");
