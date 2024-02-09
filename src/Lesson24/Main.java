@@ -2,7 +2,6 @@ package Lesson24;
 
 import Lesson24.MyArrays.AbstractList.ArrayLists.My_ArrayList;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 /**

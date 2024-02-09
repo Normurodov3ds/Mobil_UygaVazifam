@@ -64,14 +64,14 @@ public class My_ArrayList<E> extends AbstractList<E> {
     @Override
     public E[] toArray() {
         size();
-        if (obj instanceof Integer[]) {
+        if (obj[0] instanceof Integer) {
             Integer[] a = new Integer[size];
             for (int i = 0; i < size; i++) {
                 a[i] = (Integer) obj[i];
             }
             E[] a1 = (E[]) a;
             return a1;
-        } else if (obj instanceof String[]) {
+        } else if (obj[0] instanceof String) {
             String[] a = new String[size];
             for (int i = 0; i < size; i++) {
                 a[i] = (String) obj[i];
